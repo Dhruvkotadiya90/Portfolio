@@ -75,8 +75,8 @@ body{
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    animation:  showContent 1.7s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation:  showContent 0.7s ease-in-out forwards;
+    animation-delay: 0.7s;
     z-index: 100;
     
 }
@@ -108,13 +108,14 @@ main {
     width:100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 50px;
     align-items: center;
     padding: 8rem 7% 2rem;
     opacity: 0;
     visibility: hidden;
-    animation:  showContent 1.7s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation:  showContent 0.7s ease-in-out forwards;
+    animation-delay: 0.7s;
 }
 
 @keyframes showContent  {
@@ -122,6 +123,14 @@ main {
         opacity: 1;
         visibility: visible;
     }
+}
+
+.home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .home-info h1 {
@@ -133,7 +142,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .home-info h2 {
     font-size: 35px;
@@ -141,7 +151,7 @@ main {
 }
 
 .home-info h2 .typing-animate {
-    color: white;
+    color: rgba(108, 228, 17, 0.737);
     filter: drop-shadow(100px 100px 90px rgb(255, 255, 255));
 }
 .home-info p {
